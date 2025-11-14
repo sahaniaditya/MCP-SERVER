@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.17.2"
+  },
+  "scripts" : {
+    "server:dev" : "tsx src/server.ts",
+    "server:inspect" : "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run server:dev"
+  }
+}
