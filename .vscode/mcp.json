@@ -1,0 +1,20 @@
+{
+	"servers": {
+		"my-mcp-server-68235653": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"tsx",
+				"src/server.ts"
+			],
+			"cwd": "${workspaceFolder}",
+			"dev" : {
+				"watch": "src/**/*.ts",
+				"debug": {
+					"type": "node"
+				}
+			}
+		}
+	},
+	"inputs": []
+}

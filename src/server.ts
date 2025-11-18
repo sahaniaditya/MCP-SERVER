@@ -15,7 +15,6 @@ const server = new McpServer({
 });
 
 // adding a tool
-
 server.tool("create-user", "Create a new user in the database", {
     name : z.string(),
     email : z.string(),
